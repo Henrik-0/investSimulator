@@ -1,0 +1,14 @@
+{
+  "name": "simuladorinvest",
+  "version": "1.0.0",
+  "description": "Em um mundo tão cheio de informações, nem sempre é possível achar tempo para calcular os índices dos investimentos, então pensando nisso e com intuito educacional, decidi criar esse simulador.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.2.1"
+  }
+}
