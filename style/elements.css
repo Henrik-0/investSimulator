@@ -1,0 +1,34 @@
+main {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+main article {
+   height: 100%;
+   padding: 20px;
+}
+main article.top {
+   background-image: url(../assets/bgPhone1.svg);
+   background-repeat: no-repeat;
+   background-position: top left;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+main .top #containerGraph {
+   height: 70%;
+   width: 100%;
+   padding: 10px;
+   background-image: linear-gradient(135deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, 0));
+   backdrop-filter: blur(3px);
+   border: 1px solid rgba(255, 255, 255, .1);
+   border-radius: 25px;
+}
+main article.bottom {
+   background-image: url(../assets/bgPhone2.svg);
+   background-repeat: no-repeat;
+   background-position: bottom right;
+}
