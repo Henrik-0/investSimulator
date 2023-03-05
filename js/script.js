@@ -6,17 +6,24 @@ let chart = new Chart(canvas, {
       datasets: [
          {
             label: "Valor bruto",
-            data: [1, 2, 4, 8, 16, 32, 64],
-            backgroundColor: "#00CBFF",
-            borderColor: "#00CBFF",
-            // borderWidth: 2
+            data: [1, 2, 3, 4, 5, 6, 7],
+            backgroundColor: "#725AC1",
+            borderColor: "#725AC1",
+            borderWidth: 2
          },
          {
             label: "Valor líquido",
-            data: [64, 32, 16, 8, 4, 2, 1],
+            data: [1, 3, 5, 7, 9, 11, 13],
             backgroundColor: "#FF7A00",
             borderColor: "#FF7A00",
-            // borderWidth: 
+            borderWidth: 2 
+         },
+         {
+            label: "Ganho real",
+            data: [1, 4, 7, 10, 13, 16, 19],
+            backgroundColor: "#fff",
+            borderColor: "#fff",
+            borderWidth: 2 
          }
       ]
    },

@@ -2,23 +2,36 @@
 :root {
    --black: #050517;
    --orange: #FF7A00;
-   --blue: #00CBFF;
+   --purple: #725AC1;
 }
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   overflow: hidden;
 }
 body {
    height: 100vh;
    width: 100vw;
    padding: 20px;
+
    background-color: var(--black);
    background-image:url(../assets/bgPhone1.svg), url(../assets/bgPhone2.svg);
    background-repeat: no-repeat;
    background-position:left top, bottom right;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+header {
+   margin: 0 auto;
 }
 h1 {
    color: #fff;
+   font-size: 1.5em;
+}
+a {
+   display: inline-block;
+   text-decoration: none;
+   color: white;
 }
