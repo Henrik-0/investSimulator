@@ -11,7 +11,13 @@
    overflow: hidden;
 }
 body {
+   height: 100vh;
+   width: 100vw;
+   padding: 20px;
    background-color: var(--black);
+   background-image:url(../assets/bgPhone1.svg), url(../assets/bgPhone2.svg);
+   background-repeat: no-repeat;
+   background-position:left top, bottom right;
 }
 h1 {
    color: #fff;

@@ -6,14 +6,19 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./style/style.css">
    <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+   <script src="./js/injectSvg.js"></script>
    <script src="./js/script.js" defer></script>
    <title>Simulador de investimento</title>
 </head>
 <body>
+   <header>
+
+      <h1>Simulador de investimentos</h1>
+
+   </header>
+
    <main>
       <article class="top">
-
-         <h1>Simulador de investimentos</h1>
 
          <section id="containerGraph">
             <canvas id="myGraph"></canvas>
@@ -26,14 +31,24 @@
 
          <section>
 
-            <input type="number" class="input">
-            <input type="number" class="input">
-            <input type="number" class="input">
-            <input type="number" class="input">
-            <input type="number" class="input">
-
+            <form >
+               <input type="number" class="input" id="capital">
+               <div>
+                  <input type="number" class="input" id="taxaJuros">
+                  <input type="number" class="input" id="irIof">
+                  <input type="number" class="input" id="ipca">
+                  <input type="number" class="input" id="aportes">
+               </div>
+            </form>
+            
          </section>
+
       </article>
    </main>
+
+   <footer>
+      <img onload="fetchSvg(this)" src="./assets/instagram.svg" alt="Instagram icon">
+      <img onload="fetchSvg(this)" src="./assets/linkedin.svg" alt="Linkedin icon">
+   </footer>
 </body>
 </html>
