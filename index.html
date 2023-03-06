@@ -7,52 +7,51 @@
    <link rel="stylesheet" href="./style/style.css">
    <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
    <script src="./js/injectSvg.js"></script>
-   <script src="./js/script.js" defer></script>
    <title>Simulador de investimento</title>
 </head>
 <body>
    <header>
-
+      
       <h1>Simulador de investimentos</h1>
-
+      
    </header>
-
+   
    <main>
       <article class="top">
-
+         
          <section id="containerGraph">
             <canvas id="myGraph"></canvas>
          </section>
-
+         
       </article>
       
-
+      
       <article class="bottom">
-
-            <form >
-
-               <div id="capitalBox">
-                  <input type="number" class="input" id="capital" required>
-                  <label for="capital">Capital</label>
+         
+         <form >
+            
+            <div id="capitalBox">
+               <input type="number" class="input" id="capital" required>
+               <label for="capital">Capital</label>
+            </div>
+            
+            <section>
+               
+               <div id="taxaJurosBox">
+                  <input type="number" class="input" id="taxaJuros" required>
+                  <label for="taxaJuros">Taxa de juros</label>
                </div>
                
-               <section>
-
-                  <div id="taxaJurosBox">
-                     <input type="number" class="input" id="taxaJuros" required>
-                     <label for="taxaJuros">Taxa de juros</label>
-                  </div>
-
-                  <div id="irIofBox">
-                     <input type="number" class="input" id="irIof" required>
-                     <label for="irIof">IR/IOF</label>
-                  </div>
-
-                  <div id="ipcaBox">
+               <div id="irIofBox">
+                  <input type="number" class="input" id="irIof" required>
+                  <label for="irIof">IR/IOF</label>
+               </div>
+               
+               <div id="ipcaBox">
                      <input type="number" class="input" id="ipca" required>
                      <label for="ipca">IPCA</label>
                   </div>
-
+                  
                   <div id="aportesBox">
                      <input type="number" class="input" id="aportes" value="0" required>
                      <label for="aportes">Aportes</label>
@@ -61,20 +60,21 @@
                </section>
                
             </form>
-
-      </article>
-   </main>
-
-   <footer>
-      <a href="https://www.instagram.com/henrik_090/" class="socialLink">
-         <img onload="fetchSvg(this)" src="./assets/instagram.svg" alt="Instagram icon" target="_blank">
-         <span>henrik_090</span>
-      </a>
-
-      <a href="https://www.linkedin.com/in/henrik-rodrigues-969650249/" target="_blank" class="socialLink">
-         <span>Henrik</span>
-         <img onload="fetchSvg(this)" src="./assets/linkedin.svg" alt="Linkedin icon">
-      </a>
-   </footer>
+            
+         </article>
+      </main>
+      
+      <footer>
+         <a href="https://www.instagram.com/henrik_090/" class="socialLink" target="_blank">
+            <img onload="fetchSvg(this)" src="./assets/instagram.svg" alt="Instagram icon" >
+            <span>henrik_090</span>
+         </a>
+         
+         <a href="https://www.linkedin.com/in/henrik-rodrigues-969650249/" target="_blank" class="socialLink">
+            <span>Henrik</span>
+            <img onload="fetchSvg(this)" src="./assets/linkedin.svg" alt="Linkedin icon">
+         </a>
+      </footer>
+      <script src="./js/script.js" defer></script>
 </body>
 </html>
